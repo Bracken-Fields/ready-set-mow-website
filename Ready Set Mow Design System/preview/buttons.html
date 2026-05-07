@@ -1,0 +1,25 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Buttons</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { padding: 28px 32px; background: #fff; display: flex; flex-direction: column; gap: 18px; }
+  .row { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+  .label { font-family: var(--font-mono); font-size: 10px; font-weight: 700; color: var(--fg-subtle); text-transform: uppercase; letter-spacing: 0.08em; min-width: 80px; }
+</style></head>
+<body>
+  <div class="row"><span class="label">Primary</span>
+    <a class="btn btn-primary">Get a Free Quote</a>
+    <a class="btn btn-primary" style="background:var(--rsm-green-600)">Hover</a>
+    <a class="btn btn-primary" style="transform:translateY(3px);box-shadow:0 2px 0 var(--rsm-green-900)">Press</a>
+  </div>
+  <div class="row"><span class="label">Secondary</span>
+    <a class="btn btn-secondary">Schedule Lawn Care</a>
+    <a class="btn btn-outline">View Services</a>
+    <a class="btn btn-ghost">Cancel</a>
+  </div>
+  <div class="row"><span class="label">On dark</span>
+    <div style="background:var(--rsm-deep-forest);padding:14px 18px;border-radius:10px;display:flex;gap:12px">
+      <a class="btn btn-primary">Get a Free Quote</a>
+      <a class="btn" style="background:transparent;color:#fff;border:2px solid rgba(255,255,255,0.4)">Call Now</a>
+    </div>
+  </div>
+</body></html>

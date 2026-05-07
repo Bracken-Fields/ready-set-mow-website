@@ -1,0 +1,31 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Service Card</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { padding: 24px; background: var(--rsm-off-white); display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .svc {
+    background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px 18px 24px;
+    position: relative; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; gap: 10px; min-height: 168px;
+  }
+  .svc::before { content: ""; position: absolute; left: 0; top: 18px; bottom: 18px; width: 4px; background: var(--rsm-racing-green); border-radius: 0 3px 3px 0; }
+  .svc.feat::before { background: repeating-linear-gradient(0deg, var(--rsm-racing-green) 0 8px, var(--rsm-grass-green) 8px 12px); }
+  .svc h3 { font-family: var(--font-display); font-style: italic; font-weight: 800; text-transform: uppercase; font-size: 22px; letter-spacing: 0.005em; margin: 0; }
+  .svc p  { font-family: var(--font-body); font-size: 13px; color: var(--fg-muted); margin: 0; line-height: 1.5; }
+  .row { display: flex; align-items: center; justify-content: space-between; margin-top: auto; }
+  .price { font-family: var(--font-display); font-style: italic; font-weight: 900; font-size: 26px; color: var(--rsm-near-black); }
+  .price small { font-family: var(--font-body); font-size: 11px; font-style: normal; font-weight: 600; color: var(--fg-subtle); text-transform: uppercase; letter-spacing: 0.08em; margin-left: 4px; }
+  .tag { font-family: var(--font-body); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); }
+</style></head>
+<body>
+  <div class="svc feat">
+    <span class="tag">Most popular</span>
+    <h3>Weekly Mowing</h3>
+    <p>Locked-in slot, same crew, same day. Cut, edge, trim, blow.</p>
+    <div class="row"><span class="price">$45<small>/cut</small></span><span class="tag">Recurring</span></div>
+  </div>
+  <div class="svc">
+    <span class="tag">Flexible</span>
+    <h3>One-Time Cut</h3>
+    <p>Going on vacation? Need a one-off cleanup before guests? We got it.</p>
+    <div class="row"><span class="price">$65<small>+</small></span><span class="tag">No contract</span></div>
+  </div>
+</body></html>

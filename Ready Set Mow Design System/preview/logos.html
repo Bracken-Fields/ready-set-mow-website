@@ -1,0 +1,16 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Logo Lockups</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { padding: 24px; background: #fff; display: grid; grid-template-columns: 1.1fr 1fr; gap: 14px; }
+  .tile { border: 1px solid var(--border); border-radius: 10px; padding: 18px; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 200px; gap: 10px; }
+  .tile.dark { background: var(--rsm-deep-forest); border-color: transparent; }
+  .tile.tint { background: var(--rsm-lawn-tint); border-color: var(--rsm-green-200); }
+  .tile img { max-width: 100%; max-height: 120px; }
+  .label { font-family: var(--font-mono); font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--fg-subtle); }
+  .tile.dark .label { color: #B6BDB7; }
+</style></head>
+<body>
+  <div class="tile"><img src="../assets/logo-primary-badge.png" alt="badge"><span class="label">Primary Badge</span></div>
+  <div class="tile dark"><img src="../assets/badge-monochrome-green.png" alt="badge mono green" style="filter:none"><span class="label">Mono Green / Dark</span></div>
+  <div class="tile tint" style="grid-column:1/-1;min-height:120px"><img src="../assets/logo-horizontal.png" alt="horizontal" style="max-height:84px"><span class="label">Horizontal Lockup</span></div>
+</body></html>

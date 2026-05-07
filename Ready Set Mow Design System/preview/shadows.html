@@ -1,0 +1,22 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Shadows</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { padding: 32px; background: var(--rsm-off-white); }
+  .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+  .cell { text-align: center; }
+  .box { height: 90px; background: #fff; border-radius: 12px; margin-bottom: 12px; }
+  .sm { box-shadow: 0 1px 2px rgba(4, 27, 16, 0.06), 0 1px 1px rgba(4,27,16,0.04); }
+  .md { box-shadow: 0 4px 12px rgba(4, 27, 16, 0.08), 0 2px 4px rgba(4,27,16,0.04); }
+  .lg { box-shadow: 0 14px 32px rgba(4, 27, 16, 0.12), 0 4px 10px rgba(4,27,16,0.06); }
+  .stamp { box-shadow: 0 6px 0 #0F3D08, 0 4px 12px rgba(4,27,16,0.10); background: var(--rsm-racing-green); }
+  .name { font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--fg); }
+  .desc { font-family: var(--font-body); font-size: 10px; color: var(--fg-subtle); margin-top: 2px; }
+</style></head>
+<body>
+  <div class="grid">
+    <div class="cell"><div class="box sm"></div><div class="name">shadow-sm</div><div class="desc">cards at rest</div></div>
+    <div class="cell"><div class="box md"></div><div class="name">shadow-md</div><div class="desc">hover / sticky</div></div>
+    <div class="cell"><div class="box lg"></div><div class="name">shadow-lg</div><div class="desc">popovers</div></div>
+    <div class="cell"><div class="box stamp"></div><div class="name">stamped btn</div><div class="desc">6px solid + ambient</div></div>
+  </div>
+</body></html>

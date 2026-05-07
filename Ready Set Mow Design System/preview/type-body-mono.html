@@ -1,0 +1,28 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Body & Mono</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { padding: 24px 32px; background: #fff; }
+  .grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 24px; }
+  .col h4 { font-family: var(--font-display); font-style: italic; font-weight: 800; text-transform: uppercase; font-size: 13px; letter-spacing: 0.04em; color: var(--accent); margin: 0 0 10px; }
+  .body-sample { font-family: var(--font-body); font-size: 15px; line-height: 1.55; color: var(--fg); }
+  .body-sample b { font-weight: 700; }
+  .mono-sample { font-family: var(--font-mono); font-size: 13px; line-height: 1.7; color: var(--fg); background: var(--rsm-off-white); padding: 12px 14px; border-radius: 8px; border: 1px solid var(--border); }
+  .mono-sample .k { color: var(--accent); }
+  .mono-sample .v { color: var(--rsm-near-black); }
+</style></head>
+<body>
+  <div class="grid">
+    <div class="col">
+      <h4>Body · Inter</h4>
+      <p class="body-sample">Fast cuts. Clean edges. Reliable service. We're a <b>local lawn-care crew</b> serving Anderson, Noblesville, and Fishers — book one cut or lock in a weekly schedule and stop thinking about the yard.</p>
+    </div>
+    <div class="col">
+      <h4>Mono · JetBrains</h4>
+      <div class="mono-sample">
+        <span class="k">ZIP</span>     <span class="v">46060</span><br>
+        <span class="k">SLOT</span>    <span class="v">TUE 09:30</span><br>
+        <span class="k">PHONE</span>   <span class="v">(317) 555-MOWS</span>
+      </div>
+    </div>
+  </div>
+</body></html>

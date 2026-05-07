@@ -1,0 +1,43 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Brand Patterns</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { padding: 22px; background: #fff; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .tile { border-radius: 10px; padding: 16px; min-height: 110px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid var(--border); }
+  .label { font-family: var(--font-mono); font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--fg-subtle); }
+  .checker {
+    --c1: #050806; --c2: #fff;
+    background-image:
+      linear-gradient(45deg, var(--c1) 25%, transparent 25%),
+      linear-gradient(-45deg, var(--c1) 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, var(--c1) 75%),
+      linear-gradient(-45deg, transparent 75%, var(--c1) 75%);
+    background-size: 18px 18px;
+    background-position: 0 0, 0 9px, 9px -9px, -9px 0;
+    background-color: var(--c2);
+    height: 70px; border-radius: 8px; margin-top: 8px;
+  }
+  .stripe {
+    background: repeating-linear-gradient(
+      90deg,
+      #2F7D12 0 22px,
+      #5FB832 22px 26px,
+      #2F7D12 26px 48px,
+      transparent 48px 56px
+    );
+    height: 8px; border-radius: 4px; margin-top: 8px;
+  }
+  .stripe-row { display: flex; flex-direction: column; gap: 8px; }
+</style></head>
+<body>
+  <div class="tile">
+    <span class="label">Checkered flag — corner accent only</span>
+    <div class="checker"></div>
+  </div>
+  <div class="tile">
+    <span class="label">Racing stripe — section divider</span>
+    <div class="stripe-row">
+      <div class="stripe"></div>
+      <div class="stripe" style="background:repeating-linear-gradient(90deg,#050806 0 22px,#5FB832 22px 26px,#050806 26px 48px,transparent 48px 56px)"></div>
+    </div>
+  </div>
+</body></html>

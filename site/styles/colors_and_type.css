@@ -1,0 +1,301 @@
+/* =========================================================
+   Ready Set Mow — Colors & Typography Tokens
+   ========================================================= */
+
+/* Fonts: Display = Barlow Condensed (athletic, condensed, italic-ready)
+          Body    = Inter (clean modern sans)
+          Mono    = JetBrains Mono (occasional tag/timestamp)
+   We pull from Google Fonts in the cards/UI kit. */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap');
+
+:root {
+  /* ---------- Brand color primitives ---------- */
+  --rsm-racing-green: #2F7D12;   /* primary brand green — buttons, accents */
+  --rsm-grass-green:  #5FB832;   /* fresh, vibrant — highlights, hover */
+  --rsm-deep-forest:  #041B10;   /* dark sections, footers */
+  --rsm-near-black:   #050806;   /* text on light bg, near-black surfaces */
+  --rsm-white:        #FFFFFF;
+  --rsm-off-white:    #F6F8F3;   /* page bg alt — soft, slightly green */
+  --rsm-lawn-tint:    #E8F4DF;   /* tint blocks, callout backgrounds */
+  --rsm-gray:         #6B7280;   /* secondary text, dividers */
+
+  /* Supporting greens (derived) */
+  --rsm-green-900:    #0F3D08;
+  --rsm-green-800:    #1A5A0E;
+  --rsm-green-700:    #2F7D12;   /* = racing green */
+  --rsm-green-600:    #45A01E;
+  --rsm-green-500:    #5FB832;   /* = grass */
+  --rsm-green-400:    #84CC5C;
+  --rsm-green-300:    #B6E394;
+  --rsm-green-200:    #D6EEC0;
+  --rsm-green-100:    #E8F4DF;   /* = lawn tint */
+  --rsm-green-050:    #F4FAEC;
+
+  /* Neutrals */
+  --rsm-ink-900:      #050806;
+  --rsm-ink-800:      #11181C;
+  --rsm-ink-700:      #1F262B;
+  --rsm-ink-600:      #353D43;
+  --rsm-ink-500:      #4B545A;
+  --rsm-ink-400:      #6B7280;
+  --rsm-ink-300:      #98A0A8;
+  --rsm-ink-200:      #C9CFD3;
+  --rsm-ink-100:      #E5E8EA;
+  --rsm-ink-050:      #F2F4F2;
+
+  /* Semantic — light surfaces */
+  --bg:               var(--rsm-white);
+  --bg-alt:           var(--rsm-off-white);
+  --bg-tint:          var(--rsm-lawn-tint);
+  --bg-dark:          var(--rsm-deep-forest);
+  --bg-near-black:    var(--rsm-near-black);
+
+  --fg:               var(--rsm-near-black);
+  --fg-muted:         var(--rsm-ink-500);
+  --fg-subtle:        var(--rsm-gray);
+  --fg-on-dark:       var(--rsm-white);
+  --fg-on-dark-muted: #B6BDB7;
+
+  --accent:           var(--rsm-racing-green);
+  --accent-hover:     var(--rsm-green-800);
+  --accent-active:    var(--rsm-green-900);
+  --accent-bright:    var(--rsm-grass-green);
+
+  --border:           var(--rsm-ink-100);
+  --border-strong:    var(--rsm-ink-200);
+  --border-dark:      #1F3A26;
+
+  --danger:           #C0322B;
+  --warning:          #D9A21B;
+  --success:          var(--rsm-green-600);
+
+  /* ---------- Typography ---------- */
+  --font-display: 'Barlow Condensed', 'Oswald', 'Arial Narrow', system-ui, sans-serif;
+  --font-body:    'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono:    'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* Display (athletic, italic, condensed) */
+  --display-weight:        800;
+  --display-italic-weight: 900;
+  --display-tracking-tight:-0.01em;
+  --display-tracking-wide:  0.02em;
+
+  /* Type scale */
+  --fs-display-xl: clamp(56px, 9vw, 128px);
+  --fs-display-lg: clamp(44px, 6.5vw, 88px);
+  --fs-display-md: clamp(34px, 4.5vw, 64px);
+  --fs-display-sm: clamp(28px, 3.4vw, 44px);
+  --fs-h1:         clamp(28px, 3vw, 40px);
+  --fs-h2:         clamp(22px, 2.4vw, 30px);
+  --fs-h3:         20px;
+  --fs-eyebrow:    13px;
+  --fs-body-lg:    18px;
+  --fs-body:       16px;
+  --fs-body-sm:    14px;
+  --fs-caption:    12px;
+
+  /* Line heights */
+  --lh-tight:  1.0;
+  --lh-snug:   1.15;
+  --lh-base:   1.5;
+  --lh-loose:  1.65;
+
+  /* ---------- Spacing (4px base) ---------- */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-32: 128px;
+
+  /* ---------- Radii ---------- */
+  --r-sm: 4px;
+  --r-md: 8px;
+  --r-lg: 12px;
+  --r-xl: 16px;
+  --r-2xl: 24px;
+  --r-pill: 999px;
+
+  /* ---------- Shadows ---------- */
+  --shadow-sm: 0 1px 2px rgba(4, 27, 16, 0.06), 0 1px 1px rgba(4,27,16,0.04);
+  --shadow-md: 0 4px 12px rgba(4, 27, 16, 0.08), 0 2px 4px rgba(4,27,16,0.04);
+  --shadow-lg: 0 14px 32px rgba(4, 27, 16, 0.12), 0 4px 10px rgba(4,27,16,0.06);
+  --shadow-xl: 0 28px 60px rgba(4, 27, 16, 0.18), 0 8px 18px rgba(4,27,16,0.08);
+  --shadow-inset-top: inset 0 1px 0 rgba(255,255,255,0.06);
+  --shadow-press: 0 1px 0 rgba(4,27,16,0.10) inset;
+
+  /* ---------- Motion ---------- */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 120ms;
+  --dur-base: 180ms;
+  --dur-slow: 280ms;
+
+  /* ---------- Layout ---------- */
+  --container: 1240px;
+  --container-narrow: 960px;
+  --header-h: 76px;
+  --section-py: clamp(56px, 8vw, 112px);
+}
+
+/* ---------- Base element styles (semantic) ---------- */
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-base);
+  color: var(--fg);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, .display {
+  font-family: var(--font-display);
+  font-weight: var(--display-weight);
+  font-style: italic;
+  line-height: var(--lh-snug);
+  letter-spacing: var(--display-tracking-tight);
+  text-transform: uppercase;
+  margin: 0 0 var(--space-4);
+  color: var(--fg);
+}
+h1 { font-size: var(--fs-h1); }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); letter-spacing: 0; }
+
+.display-xl { font-size: var(--fs-display-xl); line-height: var(--lh-tight); }
+.display-lg { font-size: var(--fs-display-lg); line-height: var(--lh-tight); }
+.display-md { font-size: var(--fs-display-md); line-height: var(--lh-tight); }
+.display-sm { font-size: var(--fs-display-sm); line-height: var(--lh-snug); }
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: var(--fs-eyebrow);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-style: normal;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.eyebrow::before {
+  content: "";
+  width: 22px;
+  height: 2px;
+  background: var(--accent);
+  display: inline-block;
+}
+
+p { margin: 0 0 var(--space-4); color: var(--fg-muted); line-height: var(--lh-loose); }
+p.lead { font-size: var(--fs-body-lg); color: var(--fg); }
+
+a { color: var(--accent); text-decoration: none; transition: color var(--dur-fast) var(--ease-out); }
+a:hover { color: var(--accent-hover); }
+
+code, kbd, .mono {
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+}
+
+/* Buttons (semantic) */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 14px 22px;
+  border-radius: var(--r-md);
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform var(--dur-fast) var(--ease-out),
+              background var(--dur-fast) var(--ease-out),
+              box-shadow var(--dur-fast) var(--ease-out),
+              color var(--dur-fast) var(--ease-out);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn:active { transform: translateY(1px); box-shadow: var(--shadow-press); }
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 6px 0 var(--rsm-green-900), var(--shadow-md);
+}
+.btn-primary:hover { background: var(--rsm-green-600); }
+.btn-primary:active { box-shadow: 0 2px 0 var(--rsm-green-900); transform: translateY(3px); }
+
+.btn-secondary {
+  background: var(--rsm-near-black);
+  color: #fff;
+  box-shadow: 0 6px 0 #000, var(--shadow-md);
+}
+.btn-secondary:hover { background: #1A2420; }
+.btn-secondary:active { box-shadow: 0 2px 0 #000; transform: translateY(3px); }
+
+.btn-outline {
+  background: transparent;
+  color: var(--rsm-near-black);
+  border-color: var(--rsm-near-black);
+}
+.btn-outline:hover { background: var(--rsm-near-black); color: #fff; }
+
+.btn-ghost { background: transparent; color: var(--fg); }
+.btn-ghost:hover { background: var(--rsm-ink-050); }
+
+/* Card */
+.card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-6);
+}
+
+/* Checkered flag pattern (use SPARINGLY) */
+.checkered {
+  --c1: var(--rsm-near-black);
+  --c2: #fff;
+  background-image:
+    linear-gradient(45deg, var(--c1) 25%, transparent 25%),
+    linear-gradient(-45deg, var(--c1) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, var(--c1) 75%),
+    linear-gradient(-45deg, transparent 75%, var(--c1) 75%);
+  background-size: 16px 16px;
+  background-position: 0 0, 0 8px, 8px -8px, -8px 0;
+  background-color: var(--c2);
+}
+
+/* Racing stripe */
+.racing-stripe {
+  background: repeating-linear-gradient(
+    90deg,
+    var(--rsm-racing-green) 0 22px,
+    var(--rsm-grass-green) 22px 26px,
+    var(--rsm-racing-green) 26px 48px,
+    transparent 48px 56px
+  );
+  height: 6px;
+}
+
+/* Angled cut utility */
+.angled-cut-r { clip-path: polygon(0 0, 100% 0, calc(100% - 24px) 100%, 0 100%); }
+.angled-cut-l { clip-path: polygon(24px 0, 100% 0, 100% 100%, 0 100%); }

@@ -1,0 +1,28 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Green Scale</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { padding: 24px; background: #fff; }
+  .row { display: grid; grid-template-columns: repeat(10, 1fr); border-radius: 10px; overflow: hidden; border: 1px solid var(--border); }
+  .step { height: 96px; position: relative; }
+  .step .lbl { position: absolute; left: 8px; bottom: 6px; font-family: var(--font-mono); font-size: 10px; font-weight: 700; }
+  .step .hex { position: absolute; right: 8px; bottom: 6px; font-family: var(--font-mono); font-size: 10px; }
+  .light .lbl, .light .hex { color: #041B10; }
+  .dark  .lbl, .dark  .hex { color: #fff; }
+  .legend { font-family: var(--font-body); font-size: 12px; color: var(--fg-subtle); margin-top: 10px; display: flex; justify-content: space-between; }
+  .legend strong { font-family: var(--font-display); font-style: italic; font-weight: 800; text-transform: uppercase; color: var(--fg); letter-spacing: 0; font-size: 13px; }
+</style></head>
+<body>
+  <div class="row">
+    <div class="step light" style="background:#F4FAEC"><span class="lbl">050</span><span class="hex">F4FAEC</span></div>
+    <div class="step light" style="background:#E8F4DF"><span class="lbl">100</span><span class="hex">E8F4DF</span></div>
+    <div class="step light" style="background:#D6EEC0"><span class="lbl">200</span><span class="hex">D6EEC0</span></div>
+    <div class="step light" style="background:#B6E394"><span class="lbl">300</span><span class="hex">B6E394</span></div>
+    <div class="step light" style="background:#84CC5C"><span class="lbl">400</span><span class="hex">84CC5C</span></div>
+    <div class="step dark" style="background:#5FB832"><span class="lbl">500</span><span class="hex">5FB832</span></div>
+    <div class="step dark" style="background:#45A01E"><span class="lbl">600</span><span class="hex">45A01E</span></div>
+    <div class="step dark" style="background:#2F7D12"><span class="lbl">700</span><span class="hex">2F7D12</span></div>
+    <div class="step dark" style="background:#1A5A0E"><span class="lbl">800</span><span class="hex">1A5A0E</span></div>
+    <div class="step dark" style="background:#0F3D08"><span class="lbl">900</span><span class="hex">0F3D08</span></div>
+  </div>
+  <div class="legend"><strong>Green Scale</strong><span>700 = Racing · 500 = Grass · 100 = Lawn Tint</span></div>
+</body></html>

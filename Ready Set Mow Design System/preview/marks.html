@@ -1,0 +1,17 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Marks & App Icons</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { padding: 24px; background: #fff; display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
+  .tile { border: 1px solid var(--border); border-radius: 10px; padding: 14px; display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .tile.dark { background: var(--rsm-deep-forest); border-color: transparent; }
+  .tile img { width: 84px; height: 84px; object-fit: contain; }
+  .label { font-family: var(--font-mono); font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--fg-subtle); text-align: center; }
+  .tile.dark .label { color: #B6BDB7; }
+</style></head>
+<body>
+  <div class="tile"><img src="../assets/icon-shield-rsm.png"><span class="label">Shield RSM</span></div>
+  <div class="tile"><img src="../assets/icon-circle-rsm.png"><span class="label">Circle RSM</span></div>
+  <div class="tile"><img src="../assets/app-icon-green.png"><span class="label">App · Green</span></div>
+  <div class="tile dark"><img src="../assets/app-icon-dark.png"><span class="label">App · Dark</span></div>
+  <div class="tile"><img src="../assets/favicon-grass-circle.png"><span class="label">Grass Circle</span></div>
+</body></html>
